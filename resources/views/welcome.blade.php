@@ -21,6 +21,11 @@
 <body
     class="bg-[#FDFDFC] dark:bg-[#0a0a0a] text-[#1b1b18] flex p-6 lg:p-8 items-center lg:justify-center min-h-screen flex-col">
     <h1 class="text-3xl font-semibold mb-4 text-white">Welcome to the Admin Panel</h1>
+    @foreach ($data as $user)
+        <h2 class="text-xl font-medium text-white">{{ $user['id'] }}</h2>
+        <h2 class="text-xl font-medium text-white">{{ $user['name'] }}</h2>
+    @endforeach
+    {{-- <h2 class="text-xl font-medium text-white">{{ $data }}</h2> --}}
 </body>
 
 </html>
